@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h2 {
+            color: red;
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+            margin: 5px 0;
+        }
+        button {
+            width: 48%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: green;
+            color: white;
+        }
+        .reset-btn {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Registration Form</h2>
+    
+    <form action="#" method="post">
+        <label>Title:</label>
+        <div class="radio-group">
+            <input type="radio" name="title" value="Mr."> Mr.
+            <input type="radio" name="title" value="Mrs."> Mrs.
+            <input type="radio" name="title" value="Ms."> Ms.
+        </div>
+
+        <label>First Name:</label>
+        <input type="text" name="firstname" placeholder="First Name" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastname" placeholder="Last Name" required>
+
+        <label>Mail Address 1:</label>
+        <input type="text" name="mail1" required>
+
+        <label>Mail Address 2:</label>
+        <input type="text" name="mail2">
+
+        <label>City:</label>
+        <input type="text" name="city" required>
+
+        <label>State:</label>
+        <select name="state">
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+        </select>
+
+        <label>Zip Code:</label>
+        <input type="text" name="zip" required>
+
+        <label>Upload Photo:</label>
+        <input type="file" name="photo" accept="image/*">
+
+        <label>E-Mail:</label>
+        <input type="email" name="email" required>
+
+        <label>Mobile:</label>
+        <input type="tel" name="mobile" placeholder="+91" required>
+
+        <label>Languages Known:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="languages" value="Gujarati"> Gujarati
+            <input type="checkbox" name="languages" value="Hindi"> Hindi
+            <input type="checkbox" name="languages" value="English"> English
+            <input type="checkbox" name="languages" value="Marathi"> Marathi
+        </div>
+
+        <label>Additional Information:</label>
+        <textarea name="additional_info" rows="3" placeholder="Optional"></textarea>
+
+        <div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+    </form>
+
+</body>
+</html>
+
+
+

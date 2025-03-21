@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Chatbot</h2>
+<div id="chatbox">
+    <p><strong>Bot:</strong> Hello! How can I help you?</p>
+</div>
+<input type="text" id="userInput" placeholder="Type a message">
+<button onclick="sendMessage()">Send</button>
+<script>
+    function sendMessage() {
+        let userText = document.getElementById("userInput").value.trim();
+        if (userText === "") return;
+    
+        let chatbox = document.getElementById("chatbox");
+        chatbox.innerHTML += `<p><strong>You:</strong> ${userText}</p>`;
+    
+        let botReply = getBotResponse(userText);
+        chatbox.innerHTML += `<p><strong>Bot:</strong> ${botReply}</p>`;
+    
+        document.getElementById("userInput").value = "";
+    }
+    
+    function getBotResponse(input) {
+        input = input.toLowerCase();
+    
+        if (input.includes("hello")) {
+            return "Hi there! How can I assist you?";
+        } else if (input.includes("how are you")) {
+            return "I'm just a bot, but I'm doing great! How about you?";
+        } else if (input.includes("weather")) {
+            return "I can't check the weather right now, but you can visit weather.com!";
+        } else {
+            return "I'm not sure how to answer that. Can you ask something else?";
+        }
+    }
+    
+</script>
+</body>
+</html>

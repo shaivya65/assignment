@@ -38,6 +38,11 @@ header img {
     margin: 20px auto;
     display: block;
 }
+header h1{
+    color:#2e2c2c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
 
 .info-box {
     background-color: #c0e749;

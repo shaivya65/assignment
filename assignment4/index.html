@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>JavaScript Concepts</h1>
+        <h1>Assignment -3</h1>
         
         <!-- Variables, Functions, Conditions, Loops -->
         <button onclick="calculateBMI()">Calculate BMI</button>
@@ -105,7 +105,8 @@
         function addItem() {
             let list = document.getElementById("dynamicList");
             let newItem = document.createElement("li");
-            newItem.textContent = "New Item";
+            const text =prompt("enter the text to add")
+            newItem.textContent = text;
             list.appendChild(newItem);
         }
 

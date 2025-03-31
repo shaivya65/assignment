@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #f4f4f9;
+    background-color: #75c7de;
 }
 
 /* Navigation Bar */
@@ -68,11 +68,11 @@ body {
     justify-content: center;
     padding: 40px;
     gap: 20px;
-    background-color: #e8f0ff;
+    background-color: #ea7b05;
 }
 .card {
     padding: 20px;
-    border: 2px solid #4a90e2;
+    border: 2px solid #052b56;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     text-align: center;
@@ -112,7 +112,7 @@ body {
 /* Extra section to allow scrolling */
 .extra-content {
     height: 100vh;
-    background: #eee;
+    background: #b82f2f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +124,7 @@ body {
 
 /* Footer */
 footer {
-    background: #4a90e2;
+    background: #023773;
     color: white;
     text-align: center;
     padding: 15px;
@@ -138,7 +138,7 @@ footer {
 }
 .social-icons i:hover {
     transform: scale(1.2);
-    color: #ffcc00;
+    color: #7e0668;
 }
 
 /* Fade-in Animation */

@@ -3,56 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Webpage</title>
+    <title>Styled Webpage</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+t>
 </head>
 <body>
-
     <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Welcome to The Webpage</h1>
-        <p>using CSS3</p>
+        <div class="hero-content">
+            <h1>Welcome to  Website</h1>
+            <p>Styled using CSS3</p>
+        </div>
     </section>
 
-    <!-- Content Sections -->
+    <!-- Content Section -->
     <section class="content">
-        <div class="box">
-            <h2>Modern Typography</h2>
-            <p>Enhance readability with well-structured typography.</p>
+        <div class="card hover-zoom">
+            <h2>Card 1</h2>
+            <p>This card scales up when hovered.</p>
         </div>
-        <div class="box">
-            <h2>Box Shadows & Borders</h2>
-            <p>Apply shadows and borders for an elegant design.</p>
+        <div class="card hover-tilt">
+            <h2>Card 2</h2>
+            <p>This card tilts when hovered.</p>
         </div>
     </section>
 
     <!-- Parallax Section -->
     <section class="parallax">
-        <h2>Parallax Scrolling Effect</h2>
+        <div class="parallax-content">
+            <h2> Parallax Effect</h2>
+            <p>Scroll down and see how the background stays in place!</p>
+        </div>
     </section>
+    
+    <!-- Extra content to enable scrolling -->
+    <section class="extra-content">
+        <h2>Keep Scrolling to Notice the Effect</h2>
+        <p>This extra content is here so that  scrolling effect properly.</p>
+    </section>
+    
 
     <!-- Footer -->
     <footer>
-        <p>Follow us on:</p>
+        <p>&copy Follow us on:</p>
         <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
         </div>
     </footer>
-
 </body>
 </html>

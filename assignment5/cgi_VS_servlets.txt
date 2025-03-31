@@ -1,0 +1,15 @@
+CGI is an older technology used to generate dynamic web content. It allows web servers to execute external programs (written in languages like Python, Perl, or C) to handle user requests. Each request creates a new process, leading to high resource consumption.
+
+
+Servlets are Java-based server-side programs that handle requests and generate responses. They run inside a web server (like Tomcat) and are more efficient than CGI because they operate within a single process using threads instead of separate processes.
+
+
+
+ Why Use Servlets Instead of CGI?
+Better Performance: Servlets use threads instead of processes, reducing memory and CPU load.
+
+Platform Independence: Since Servlets run on JVM, they work across platforms.
+
+Scalability: Servlets efficiently handle multiple requests, making them suitable for large applications.
+
+Built-in Features: Java Servlets provide session management, security, and database connectivity out-of-the-box.
